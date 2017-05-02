@@ -3,7 +3,9 @@ EMF Auric Demo
 
 server/auric.js
 
-#Request:
+We are getting VLT-107 error in get_session method.
+
+# Request:
 
 ```json
 {  
@@ -20,7 +22,7 @@ server/auric.js
 }
 ```
 
-#Response:
+# Response:
 
 ```json
 {  
