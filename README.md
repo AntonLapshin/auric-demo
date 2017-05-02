@@ -5,7 +5,7 @@ server/auric.js
 
 We are getting VLT-107 error in get_session method.
 
-# Request:
+## Request:
 
 ```json
 {  
@@ -22,7 +22,7 @@ We are getting VLT-107 error in get_session method.
 }
 ```
 
-# Response:
+## Response:
 
 ```json
 {  
