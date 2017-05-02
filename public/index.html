@@ -7,14 +7,22 @@
 
   <title>The Auric Demo</title>
 
-  <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
-
 </head>
 
 <body>
 
-  <input type="text"/>
+  <input id="text" type="text"/>
+  <button id="encrypt">Encrypt</button>
 
+  <h3>Token</h2>
+  <p id="token"></p>
+  <button id="decrypt">Decrypt</button>
+
+  <h3>Decrypted text</h3>
+  <p id="decrypted"></p>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/auric-api.js"></script>
   <script src="js/main.js"></script>
 </body>
 
