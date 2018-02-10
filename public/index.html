@@ -11,6 +11,10 @@
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
   <style>
+    body {
+      background-color: #ddd;
+    }
+
     h2 {
       margin: 0;
     }
@@ -26,7 +30,7 @@
   <div class="row">
     <div class="col s12">
 
-      <div class="card green lighten-5">
+      <div class="card white">
         <div class="card-content">
           <h2 class="card-title">Auric Vault EMF Demo</h2>
 
@@ -34,22 +38,22 @@
             <input id="text" type="text" />
             <label for="text">Enter your secret text here</label>
           </div>
-          <a id="encrypt" class="waves-effect waves-light btn"><i class="material-icons left">lock</i>Encrypt</a>
+          <a id="encrypt" class="waves-effect waves-light btn blue"><i class="material-icons left">lock</i>Encrypt</a>
 
         </div>
       </div>
 
-      <div class="card deep-purple lighten-5">
+      <div class="card white">
         <div class="card-content">
           <h2 class="card-title">Token</h2>
 
           <p id="token"></p>
           <br/>
-          <a id="decrypt" class="waves-effect waves-light btn"><i class="material-icons left">lock_open</i>Decrypt</a>
+          <a id="decrypt" class="waves-effect waves-light btn orange"><i class="material-icons left">lock_open</i>Decrypt</a>
         </div>
       </div>
 
-      <div class="card orange lighten-5">
+      <div class="card white">
         <div class="card-content">
           <h2 class="card-title">Decrypted text</h2>
 
