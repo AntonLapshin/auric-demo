@@ -1,26 +1,28 @@
-import * as express from 'express'
-import { join } from 'path'
-import AuricAPI from './server/auric-api'
+import * as express from 'express';
+import { join } from 'path';
+import AuricAPI from './server/auric-api';
+import * as cors from 'cors';
 
-let app = express()
+const app = express();
+
+app.use(cors());
 
 /**
  * Get Session Id. Auric API.
- * 
+ *
  */
-app.get('/get_session', async function (req, res) {
+app.get('/get_session', async function(req, res) {
   try {
-    let sessionId = await AuricAPI.getSession()
-    res.json(sessionId)
+    const sessionId = await AuricAPI.getSession();
+    res.json(sessionId);
+  } catch (ex) {
+    res.status(500).end(ex);
   }
-  catch(ex){
-    res.status(500).end(ex)
-  }
-})
+});
 
-app.use(express.static(join(__dirname, 'public')))
-let port = process.env.PORT || 3333
-app.set('port', port)
-app.listen(port, function () {
-  console.log("app.listen on " + port)
+app.use(express.static(join(__dirname, 'public')));
+const port = process.env.PORT || 3333;
+app.set('port', port);
+app.listen(port, function() {
+  console.log('app.listen on ' + port);
 });
